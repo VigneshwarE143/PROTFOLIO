@@ -11,3 +11,100 @@ body {
 	margin: 0;
 	font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
+
+@keyframes fadeUp {
+	0% {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes floatSoft {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-6px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes blobFloat {
+	0% {
+		transform: translate(0, 0) scale(1);
+	}
+	33% {
+		transform: translate(20px, -10px) scale(1.05);
+	}
+	66% {
+		transform: translate(-15px, 12px) scale(0.98);
+	}
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+	100% {
+		background-position: 200% 0;
+	}
+}
+
+.animate-fade-up {
+	animation: fadeUp 0.8s ease both;
+}
+
+.delay-100 {
+	animation-delay: 0.1s;
+}
+
+.delay-200 {
+	animation-delay: 0.2s;
+}
+
+.delay-300 {
+	animation-delay: 0.3s;
+}
+
+.delay-400 {
+	animation-delay: 0.4s;
+}
+
+.delay-500 {
+	animation-delay: 0.5s;
+}
+
+.animate-float {
+	animation: floatSoft 3.5s ease-in-out infinite;
+}
+
+.animate-blob {
+	animation: blobFloat 14s ease-in-out infinite;
+}
+
+.animate-blob-slow {
+	animation: blobFloat 22s ease-in-out infinite;
+}
+
+.bg-shimmer {
+	background: linear-gradient(90deg, rgba(20,184,166,0.08), rgba(99,102,241,0.08), rgba(20,184,166,0.08));
+	background-size: 200% 100%;
+	animation: shimmer 12s linear infinite;
+}
+
+.hexagon {
+	clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+}
+
+.hero-glow {
+	box-shadow: 0 0 40px rgba(20,184,166,0.45), 0 0 120px rgba(20,184,166,0.2);
+}
