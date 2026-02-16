@@ -457,7 +457,7 @@ const HomePage = () => {
                 <div className="absolute inset-0 hexagon bg-teal-500/90 hero-glow" />
                 <div className="absolute inset-[10px] hexagon bg-white dark:bg-slate-900">
                   <img
-                    src="/Profile_image.png"
+                    src="/portrait.png"
                     alt={`${personalData.fullName}'s profile`}
                     className="w-full h-full object-cover hexagon scale-[1.08]"
                     onError={(e) => {
